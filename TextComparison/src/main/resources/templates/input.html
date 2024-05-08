@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:thg="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>無料文章比較ツール:D発見🔍</title>
+    <link rel="stylesheet" href=../css/input.css>
+    <link rel="stylesheet" href=../css/top.css>
+</head>
+<body>
+    <div id="top">
+        <h1>文章比較ツール　D発見🔍</h1>
+    </div>
+    <div class="setumei">
+        <p> 枠内に比較したい文章を入れてください。<br>左右の間違い探しをします🔍<br>
+    エラーは太字で表示します</p>
+    </div>
+    <!-- テキストエリアとボタンを含むdiv要素 -->
+    <div class="form">
+        <form method="post" action="/confirm">
+            <!-- テキストエリアを使用して回答枠を大きくする -->
+            <textarea class="form1" name="val1" ></textarea>
+            <textarea class="form2" name="val2" ></textarea>
+            <p><button class="buttom" type="submit">compare!</button></p>
+        </form>
+    </div>
+</body>
+</html>

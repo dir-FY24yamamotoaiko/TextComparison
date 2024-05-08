@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>無料文章比較ツール:D発見🔍</title>
+    <link rel="stylesheet" href=../css/confirm.css>
+    <link rel="stylesheet" href=../css/top.css>
+</head>
+<body>
+    <div id="top">
+        <h1>文章比較ツール　D発見🔍</h1>
+        <a href="/input" class="buttom">Back</a>
+    </div>
+    <div id="main">
+        <div id="right">
+            <p th:utext="${result1}"></p>
+        </div>
+        <aside>
+            <p th:utext="${result2}"></p>
+        </aside>
+        
+    </div>
+</body>
+</html>

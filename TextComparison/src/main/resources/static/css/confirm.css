@@ -1,0 +1,76 @@
+.buttom {
+  display: inline-block;
+  border: 2px solid;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  color: rightgreen;
+  padding: 1rem 5rem 1rem 2rem;
+  transition: all 0.3s;
+}
+
+.buttom:before,
+.buttom:after {
+  content: "";
+  position: absolute;
+  display: block;
+  transition: all 0.3s;
+}
+
+.buttom:before {
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 100%;
+  background: #0080c0;
+}
+
+.buttom:after {
+  width: 0.5rem;
+  height: 1rem;
+  top: 50%;
+  right: 1.7rem;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  transform: translateY(-50%) rotate(45deg) skewX(-45deg);
+}
+
+.buttom:hover {
+  padding: 1rem 6rem 1rem 1.5rem;
+}
+
+.buttom:hover:before {
+  width: 5rem;
+  background: #0080c0;
+}
+
+.buttom:hover:after {
+  height: 2rem;
+  right: 2.3rem;
+}
+
+#main{
+	height: 100px;
+    display: flex;
+}
+
+#right{
+	width:50%;
+	height: 400px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 30px 20px 30px 70px;
+	font-family: "MPLUSRounded1c-Black.ttf";
+    font-size: 15px
+}
+
+        
+aside{
+	width:50%;
+	height: 400px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 30px 70px 30px 20px;
+	font-family: "MPLUSRounded1c-Black.ttf";
+    font-size: 15px
+}    
+
+
